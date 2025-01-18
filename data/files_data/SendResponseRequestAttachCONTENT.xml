@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Envelope
+        xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+    <Body>
+        <SendResponseRequest xmlns="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.1">
+            <SenderProvidedResponseData Id="SIGNED_BY_CALLER">
+                <MessageID>7fe906f3-392d-11ef-be06-005056b2290</MessageID>
+                <To>
+                    eyJydGkiOmZhbHNlLCJuaWQiOiIiLCJjaWQiOiI1MDZhMGJhOC05NmFlLTExZWItYThiMy0wMjQyYWMxMzAwMDMiLCJydHRsIjowLCJyZW9sIjowLCJ0Y2QiOiIiLCJyaWQiOiIiLCJzaWQiOjE4NDQyMiwibWlkIjoiNTA2YTBiYTgtOTZhZS0xMWViLWE4YjMtMDI0MmFjMTMwMDAzIiwic2xjIjoieC1hcnRlZmFjdHMtZm5zLXZpcGlwLXRvc212LXJ1XzMxMS0xNV80LjAuMl9GTlNWaXBJUFJlcXVlc3QiLCJtbm0iOiI2NzAxMTAiLCJjcnQiOiIyMDIxLTA0LTA2VDExOjAyOjExLjc5NSswMzowMCIsImVvbCI6MH0=
+                </To>
+                <MessagePrimaryContent xmlns="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.1">
+                    <tns:ResponsData xmlns:tns="urn://ksbo-service/application/1.0.0">
+                        <tns:Status>RESULT</tns:Status>
+                        <tns:Comment>Вам выдана лицензия №33333 от 21 января 2021 года. Срок действия лицензии с 22
+                            января 2021 - бессрочно. Вам отправлена выписка из реестра лицензий о выдаче лицензии.
+                        </tns:Comment>
+                    </tns:ResponsData>
+                </MessagePrimaryContent>
+                <AttachmentHeaderList xmlns="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.1">
+                    <AttachmentHeader>
+                        <contentId>Выписка из реестра лицензий о выдаче лицензии.zip</contentId>
+                        <MimeType>application/zip</MimeType>
+                    </AttachmentHeader>
+                </AttachmentHeaderList>
+            </SenderProvidedResponseData>
+            <AttachmentContentList xmlns="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.1">
+                <AttachmentContent>
+                    <Id>Выписка из реестра лицензий о выдаче лицензии.zip</Id>
+                    <Content>
+                        UEsDBBQAAAgIAFlLNVLzj+
+                    </Content>
+                </AttachmentContent>
+            </AttachmentContentList>
+        </SendResponseRequest>
+    </Body>
+</Envelope>

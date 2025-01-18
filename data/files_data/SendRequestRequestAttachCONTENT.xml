@@ -1,0 +1,33 @@
+<Envelope
+        xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+    <Body>
+        <SendRequestRequest xmlns="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.1">
+            <SenderProvidedRequestData Id="SIGNED_BY_CALLER">
+                <MessageID>7fe906f3-392d-11ef-be06-005056b22901</MessageID>
+                <MessagePrimaryContent xmlns="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.1">
+                    <ns1:FNSVipULRequest xmlns:ns1="urn://x-artefacts-fns-vipul-tosmv-ru/311-14/4.0.5"
+                                         ИдДок="22ED0D32-F3F5-0693-E050-A8C0D3C81091" НомерДела="БН">
+                        <ns1:ЗапросЮЛ>
+                            <ns1:ИННЮЛ>5257045651</ns1:ИННЮЛ>
+                        </ns1:ЗапросЮЛ>
+                    </ns1:FNSVipULRequest>
+                </MessagePrimaryContent>
+                <AttachmentHeaderList xmlns="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.1">
+                    <AttachmentHeader>
+                        <contentId>_Заявление.PDF</contentId>
+                        <MimeType>application/pdf</MimeType>
+                    </AttachmentHeader>
+                </AttachmentHeaderList>
+                <TestMessage/>
+            </SenderProvidedRequestData>
+            <AttachmentContentList xmlns="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.1">
+                <AttachmentContent>
+                    <Id>_Заявление.PDF</Id>
+                    <Content>
+                        JVBERi0xLjQKJdP0zOEKMSA
+                    </Content>
+                </AttachmentContent>
+            </AttachmentContentList>
+        </SendRequestRequest>
+    </Body>
+</Envelope>

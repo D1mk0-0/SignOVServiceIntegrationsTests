@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+    <Body>
+        <GetRequestResponse xmlns="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.1">
+            <RequestMessage>
+                <Request Id="SIGNED_BY_SMEV">
+                    <SenderProvidedRequestData Id="SIGNED_BY_CALLER">
+                        <MessageID>7fe906f3-392d-11ef-be06-005056b2290</MessageID>
+                        <MessagePrimaryContent
+                                xmlns="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.1">
+                            <req:Request
+                                    xmlns:req="urn://x-artefacts-rosreestr-gov-ru/virtual-services/egrn-statement/1.1.2">
+                                <req:region>31</req:region>
+                                <req:externalNumber>ТОП-40187</req:externalNumber>
+                                <req:senderType>MFC</req:senderType>
+                                <req:Attachment>
+                                    <req:IsMTOMAttachmentContent>true</req:IsMTOMAttachmentContent>
+                                    <req:RequestDescription>
+                                        <req:IsUnstructuredFormat>false</req:IsUnstructuredFormat>
+                                        <req:IsZippedPacket>true</req:IsZippedPacket>
+                                        <req:fileName>request.xml</req:fileName>
+                                    </req:RequestDescription>
+                                    <req:Statement>
+                                        <req:IsUnstructuredFormat>false</req:IsUnstructuredFormat>
+                                        <req:IsZippedPacket>true</req:IsZippedPacket>
+                                        <req:fileName>app_1.xml</req:fileName>
+                                    </req:Statement>
+                                    <req:File>
+                                        <req:IsUnstructuredFormat>true</req:IsUnstructuredFormat>
+                                        <req:IsZippedPacket>true</req:IsZippedPacket>
+                                        <req:fileName>Заявление(3).pdf</req:fileName>
+                                    </req:File>
+                                    <req:File>
+                                        <req:IsUnstructuredFormat>true</req:IsUnstructuredFormat>
+                                        <req:IsZippedPacket>true</req:IsZippedPacket>
+                                        <req:fileName>Заявление(3).pdf.sig</req:fileName>
+                                    </req:File>
+                                    <req:File>
+                                        <req:IsUnstructuredFormat>true</req:IsUnstructuredFormat>
+                                        <req:IsZippedPacket>true</req:IsZippedPacket>
+                                        <req:fileName>app_1.xml.sig</req:fileName>
+                                    </req:File>
+                                    <req:File>
+                                        <req:IsUnstructuredFormat>true</req:IsUnstructuredFormat>
+                                        <req:IsZippedPacket>true</req:IsZippedPacket>
+                                        <req:fileName>request.xml.sig</req:fileName>
+                                    </req:File>
+                                </req:Attachment>
+                            </req:Request>
+                        </MessagePrimaryContent>
+                        <RefAttachmentHeaderList
+                                xmlns="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.1">
+                            <RefAttachmentHeader>
+                                <uuid>1840b2ba-5826-11ec-bf63-0242ac130002</uuid>
+                                <Hash>6pBsQ3OJK2ZMgTer+Xv9YlpkUdM5XksM5gOPg8L7kVE=</Hash>
+                                <MimeType>application/zip</MimeType>
+                            </RefAttachmentHeader>
+                        </RefAttachmentHeaderList>
+                    </SenderProvidedRequestData>
+                    <MessageMetadata>
+                        <MessageId>${uuid}</MessageId>
+                        <MessageType>REQUEST</MessageType>
+                        <Sender>
+                            <Mnemonic/>
+                            <HumanReadableName/>
+                        </Sender>
+                        <SendingTimestamp>2014-02-11T17:10:03.616+04:00</SendingTimestamp>
+                        <DestinationName>unknown</DestinationName>
+                        <Recipient>
+                            <Mnemonic/>
+                            <HumanReadableName/>
+                        </Recipient>
+                        <SupplementaryData>
+                            <DetectedContentTypeName>not detected</DetectedContentTypeName>
+                            <InteractionType>NotDetected</InteractionType>
+                        </SupplementaryData>
+                        <DeliveryTimestamp>2014-02-11T17:10:03.616+04:00</DeliveryTimestamp>
+                        <Status>responseIsDelivered</Status>
+                    </MessageMetadata>
+                    <FSAttachmentsList xmlns="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.1">
+                        <FSAttachment>
+                            <uuid>1840b2ba-5826-11ec-bf63-0242ac130002</uuid>
+                            <UserName>anonymous</UserName>
+                            <Password>anonymous</Password>
+                            <FileName>/RR_7.zip</FileName>
+                        </FSAttachment>
+                    </FSAttachmentsList>
+                    <ReplyTo>
+                        eyJzaWQiOjEsIm1pZCI6IjRjMzAzZjA4LWJlYjAtMTFlYi04MGYzLTk5MjJhYjgxZjVmYSIsImVvbCI6MCwic2xjIjoidXJuOi8veC1hcnRlZmFjdHMtcm9zcmVlc3RyLWdvdi1ydS92aXJ0dWFsLXNlcnZpY2VzL2Vncm4tc3RhdGVtZW50LzEuMS4yX1JlcXVlc3QiLCJtbm0iOiIifQ==
+                    </ReplyTo>
+                </Request>
+                <SMEVSignature>
+                    <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                        <ds:SignedInfo>
+                            <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+                            <ds:SignatureMethod
+                                    Algorithm="urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr34102012-gostr34112012-256"/>
+                            <ds:Reference URI="#SIGNED_BY_SMEV">
+                                <ds:Transforms>
+                                    <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+                                    <ds:Transform Algorithm="urn://smev-gov-ru/xmldsig/transform"/>
+                                </ds:Transforms>
+                                <ds:DigestMethod
+                                        Algorithm="urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr34112012-256"/>
+                                <ds:DigestValue>dcky5EKgNEbzigHu7GS9sBLM0rNbHPTVufZmQjRMVjU=</ds:DigestValue>
+                            </ds:Reference>
+                        </ds:SignedInfo>
+                        <ds:SignatureValue>
+                            xHJ6kUnc243DCzQgHKVuwhK9687Br1J8QpIFlfXm9BQvCTBaL1v/Y3kr3Tloh0c/z0wi2ZOaxcsfhqyjPwnz7g==
+                        </ds:SignatureValue>
+                        <ds:KeyInfo>
+                            <ds:X509Data>
+                                <ds:X509Certificate>
+                                    MIIDTTCCAvqgAwIBAgITEgBkTU1D0X2TGunl1gACAGRNTTAKBggqhQMHAQEDAjB/MSMwIQYJKoZIhvcNAQkBFhRzdXBwb3J0QGNyeXB0b3Byby5ydTELMAkGA1UEBhMCUlUxDzANBgNVBAcTBk1vc2NvdzEXMBUGA1UEChMOQ1JZUFRPLVBSTyBMTEMxITAfBgNVBAMTGENSWVBUTy1QUk8gVGVzdCBDZW50ZXIgMjAeFw0yNDA2MjgxMTI1NDNaFw0yNDA4MjgxMTM1NDNaME8xHTAbBgkqhkiG9w0BCQEWDnRlc3RAdGVzdC50ZXN0MREwDwYDVQQDDAjQotC10YHRgjENMAsGA1UECgwEVGVzdDEMMAoGA1UEBwwDVkxHMGYwHwYIKoUDBwEBAQEwEwYHKoUDAgIkAAYIKoUDBwEBAgIDQwAEQBnWXfS/PoQdUUG0SD4/W7axHPtonzdxCRDDPToqrkvF0L8eAIlcfOZzgsAboZAPeXnRAD0+Zi1D+yy1PDNSla+jggF2MIIBcjAOBgNVHQ8BAf8EBAMCBPAwEwYDVR0lBAwwCgYIKwYBBQUHAwIwHQYDVR0OBBYEFJrTfhs8HzDH32v3WfmHOmcQUtxrMB8GA1UdIwQYMBaAFBPuDprx4ItKrhkW78vExS2pGTcdMFwGA1UdHwRVMFMwUaBPoE2GS2h0dHA6Ly90ZXN0Y2EuY3J5cHRvcHJvLnJ1L0NlcnRFbnJvbGwvQ1JZUFRPLVBSTyUyMFRlc3QlMjBDZW50ZXIlMjAyKDIpLmNybDCBrAYIKwYBBQUHAQEEgZ8wgZwwZAYIKwYBBQUHMAKGWGh0dHA6Ly90ZXN0Y2EuY3J5cHRvcHJvLnJ1L0NlcnRFbnJvbGwvdGVzdC1jYS0yMDE0X0NSWVBUTy1QUk8lMjBUZXN0JTIwQ2VudGVyJTIwMigyKS5jcnQwNAYIKwYBBQUHMAGGKGh0dHA6Ly90ZXN0Y2EuY3J5cHRvcHJvLnJ1L29jc3Avb2NzcC5zcmYwCgYIKoUDBwEBAwIDQQDeBZvnukbqAp4NC5/POGIhR3HGDLW5C1vnauP8Iey8HCUeNysdcSnv+zeT97Tl6UGn6zQeib8/S0LvV3soEW8L
+                                </ds:X509Certificate>
+                            </ds:X509Data>
+                        </ds:KeyInfo>
+                    </ds:Signature>
+                </SMEVSignature>
+            </RequestMessage>
+        </GetRequestResponse>
+    </Body>
+</Envelope>

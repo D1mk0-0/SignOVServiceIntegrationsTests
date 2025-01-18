@@ -1,0 +1,83 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <ns2:GetResponseResponse xmlns:ns2="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.1"
+                                 xmlns="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.1"
+        >
+            <ns2:ResponseMessage>
+                <ns2:Response Id="SIGNED_BY_SMEV">
+                    <ns2:OriginalMessageId>f039f480-8296-11ec-80f3-c6ba414e1e9a</ns2:OriginalMessageId>
+                    <ns2:SenderProvidedResponseData Id="sign-bce21f38-dba4-4372-9fc9-59efd3d63746">
+                        <ns2:MessageID>cd24cff9-a3c4-40e4-bea3-3d6f17abc123</ns2:MessageID>
+                        <ns2:To>
+                            eyJzaWQiOjM0NDY3LCJtaWQiOiI5MmMyMmI0NS0yYzA5LTExZWMtODBjNy0wMDUwNTY5MjI4MDciLCJlb2wiOjAsInNsYyI6IngtYXJ0ZWZhY3RzLXJvc3JlZXN0ci1nb3YtcnVfdmlydHVhbC1zZXJ2aWNlc19lZ3JuLXN0YXRlbWVudF8xLjAuMF9SZXF1ZXN0IiwibW5tIjoiMzEwNDAxIiwibnMiOiJ1cm46Ly94LWFydGVmYWN0cy1yb3NyZWVzdHItZ292LXJ1L3ZpcnR1YWwtc2VydmljZXMvZWdybi1zdGF0ZW1lbnQvMS4xLjIifQ==
+                        </ns2:To>
+                        <MessagePrimaryContent>
+                            <Response xmlns:ns2="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.1"
+                                      xmlns="urn://x-artefacts-rosreestr-gov-ru/virtual-services/egrn-statement/1.1.2">
+                                <requestNumber>MFC-2021-10-13-372196</requestNumber>
+                                <Attachment>
+                                    <AttachmentFSLink>true</AttachmentFSLink>
+                                    <ResultFile>
+                                        <IsUnstructuredFormat>false</IsUnstructuredFormat>
+                                        <IsZippedPacket>true</IsZippedPacket>
+                                        <fileName>dogovor.docx</fileName>
+                                    </ResultFile>
+                                    <File>
+                                        <IsUnstructuredFormat>true</IsUnstructuredFormat>
+                                        <IsZippedPacket>true</IsZippedPacket>
+                                        <fileName>dogovor.docx.sig</fileName>
+                                    </File>
+                                    <File>
+                                        <IsUnstructuredFormat>true</IsUnstructuredFormat>
+                                        <IsZippedPacket>true</IsZippedPacket>
+                                        <fileName>dogovor.pdf</fileName>
+                                    </File>
+                                    <File>
+                                        <IsUnstructuredFormat>true</IsUnstructuredFormat>
+                                        <IsZippedPacket>true</IsZippedPacket>
+                                        <fileName>dogovor.pdf.sig</fileName>
+                                    </File>
+                                </Attachment>
+                            </Response>
+                        </MessagePrimaryContent>
+                        <RefAttachmentHeaderList>
+                            <RefAttachmentHeader>
+                                <uuid>7bbc2846-7e74-11ec-90d6-0242ac120003</uuid>
+                                <Hash>xy5UGrh2HcIaMh0McMPVV8ZV5+vx5odXy7YRHOn3WWk=</Hash>
+                                <MimeType>application/zip</MimeType>
+                            </RefAttachmentHeader>
+                        </RefAttachmentHeaderList>
+                    </ns2:SenderProvidedResponseData>
+                    <ns2:MessageMetadata>
+                        <ns2:MessageId>cd24cff9-a3c4-40e4-bea3-3d6f17abc123</ns2:MessageId>
+                        <ns2:MessageType>RESPONSE</ns2:MessageType>
+                        <ns2:Sender>
+                            <ns2:Mnemonic>RRTR02_3S</ns2:Mnemonic>
+                            <ns2:HumanReadableName>ИС ППОЗ ЕГРН</ns2:HumanReadableName>
+                        </ns2:Sender>
+                        <ns2:SendingTimestamp>2022-01-31T13:09:02.245</ns2:SendingTimestamp>
+                        <ns2:DestinationName>unknown</ns2:DestinationName>
+                        <ns2:Recipient>
+                            <ns2:Mnemonic>310401</ns2:Mnemonic>
+                            <ns2:HumanReadableName>АИС МФЦ ГАУ БО «МФЦ»</ns2:HumanReadableName>
+                        </ns2:Recipient>
+                        <ns2:SupplementaryData>
+                            <ns2:DetectedContentTypeName>not detected</ns2:DetectedContentTypeName>
+                            <ns2:InteractionType>NotDetected</ns2:InteractionType>
+                        </ns2:SupplementaryData>
+                        <ns2:DeliveryTimestamp>2022-01-31T13:09:02.245</ns2:DeliveryTimestamp>
+                        <ns2:Status>responseIsDelivered</ns2:Status>
+                    </ns2:MessageMetadata>
+                    <FSAttachmentsList>
+                        <FSAttachment>
+                            <uuid>7bbc2846-7e74-11ec-90d6-0242ac120003</uuid>
+                            <UserName>kars</UserName>
+                            <Password>kars</Password>
+                            <FileName>/result.zip</FileName>
+                        </FSAttachment>
+                    </FSAttachmentsList>
+                </ns2:Response>
+            </ns2:ResponseMessage>
+        </ns2:GetResponseResponse>
+    </soap:Body>
+</soap:Envelope>

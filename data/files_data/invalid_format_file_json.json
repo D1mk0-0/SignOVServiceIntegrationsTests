@@ -1,0 +1,6 @@
+{
+  "thumbprint": "string",
+  "xml": "string",
+  "needSignAttachments": true,
+  "mr": 0
+}

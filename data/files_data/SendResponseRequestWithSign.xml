@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:ns="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.1"
+                  xmlns:ns1="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.1">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <ns:SendResponseRequest>
+            <ns:SenderProvidedResponseData xmlns:ns="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.1"
+                                           xmlns:ns1="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.1"
+                                           Id="SIGNED_BY_PROVIDER">
+                <ns:MessageID>afc526a2-5e82-11e4-a9ff-d4c9eff07b77</ns:MessageID>
+                <ns:To>
+                    3219|x-artefacts-gibdd-gov-ru_breach_root_1.0_BreachRequest|0e8cfc01-5e81-11e4-a9ff-d4c9eff07b77
+                </ns:To>
+                <ns1:MessagePrimaryContent>
+                    <ns1:BreachResponse xmlns:ns1="urn://x-artefacts-gibdd-gov-ru/breach/root/1.0"
+                                        xmlns:ns2="urn://x-artefacts-gibdd-gov-ru/breach/commons/1.0"
+                                        xmlns="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.1">
+                        <ns1:Breach>
+                            <ns2:UnicNumber>57#57056262843064224568</ns2:UnicNumber>
+                            <ns2:DocNumber>57НТ224568</ns2:DocNumber>
+                            <ns2:BreachDateTime>2012-06-19T09:05:00Z</ns2:BreachDateTime>
+                            <ns2:BreachPlace>ОРЛОВСКАЯ ОБЛАСТЬ,ОРЕЛ Г,ОРЕЛ Г,МОСКОВСКОЕ Ш,113Д</ns2:BreachPlace>
+                            <ns2:KOAPText>12.15Ч.1</ns2:KOAPText>
+                            <ns2:ExecDepartment>1154109-ОБДПС ГИБДД УМВД России по Орловской области
+                            </ns2:ExecDepartment>
+                            <ns2:ExecutionState>ПОСТАНОВЛЕНИЕ ВСТУПИЛО В ЗАКОННУЮ СИЛУ</ns2:ExecutionState>
+                            <ns2:DecisionNumber>57НТ224568</ns2:DecisionNumber>
+                            <ns2:DecisionDate>2012-06-19</ns2:DecisionDate>
+                            <ns2:Penalty>ШТРАФ</ns2:Penalty>
+                            <ns2:DecisionSumma>500</ns2:DecisionSumma>
+                            <ns2:DateSSP>2012-07-31</ns2:DateSSP>
+                            <ns2:WhoDecided>ГИБДД</ns2:WhoDecided>
+                            <ns2:DepartmentDecided>1154109-ОБДПС ГИБДД УМВД России по Орловской области
+                            </ns2:DepartmentDecided>
+                            <ns2:SupplierBillID>18810QН57НТ224568ZZ2</ns2:SupplierBillID>
+                            <ns2:roskaznaIn>false</ns2:roskaznaIn>
+                            <ns2:VehicleModel>ЗИЛ 4331</ns2:VehicleModel>
+                            <ns2:VehicleOwnerCategory>1</ns2:VehicleOwnerCategory>
+                            <ns2:VehicleRegPoint>Т783ЕС57</ns2:VehicleRegPoint>
+                            <ns2:StateName>ВСТУПЛЕНИЕ ПОСТАНОВЛЕНИЯ В ЗАКОННУЮ СИЛУ</ns2:StateName>
+                        </ns1:Breach>
+                    </ns1:BreachResponse>
+                </ns1:MessagePrimaryContent>
+            </ns:SenderProvidedResponseData>
+            <ns:CallerInformationSystemSignature>
+                <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                    <ds:SignedInfo>
+                        <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+                        <ds:SignatureMethod
+                                Algorithm="urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr34102012-gostr34112012-256"/>
+                        <ds:Reference URI="#SIGNED_BY_PROVIDER">
+                            <ds:Transforms>
+                                <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+                                <ds:Transform Algorithm="urn://smev-gov-ru/xmldsig/transform"/>
+                            </ds:Transforms>
+                            <ds:DigestMethod Algorithm="urn:ietf:params:xml:ns:cpxmlsec:algorithms:gostr34112012-256"/>
+                            <ds:DigestValue>F9lIcxs9c72xiCBl5Y1RArGy8i/tlWmEBYOztg9M8ys=</ds:DigestValue>
+                        </ds:Reference>
+                    </ds:SignedInfo>
+                    <ds:SignatureValue>
+                        pf7WQZ5W2cCcQJdUOb5wCuTyUOCB7M0kQrhEPNWLx1pY7QK9fsvlpFyOdP37QLlrcVPSVRMMx0Vget6RDr/j7w==
+                    </ds:SignatureValue>
+                    <ds:KeyInfo>
+                        <ds:X509Data>
+                            <ds:X509Certificate>
+                                MIIDTTCCAvqgAwIBAgITEgBkTU1D0X2TGunl1gACAGRNTTAKBggqhQMHAQEDAjB/MSMwIQYJKoZIhvcNAQkBFhRzdXBwb3J0QGNyeXB0b3Byby5ydTELMAkGA1UEBhMCUlUxDzANBgNVBAcTBk1vc2NvdzEXMBUGA1UEChMOQ1JZUFRPLVBSTyBMTEMxITAfBgNVBAMTGENSWVBUTy1QUk8gVGVzdCBDZW50ZXIgMjAeFw0yNDA2MjgxMTI1NDNaFw0yNDA4MjgxMTM1NDNaME8xHTAbBgkqhkiG9w0BCQEWDnRlc3RAdGVzdC50ZXN0MREwDwYDVQQDDAjQotC10YHRgjENMAsGA1UECgwEVGVzdDEMMAoGA1UEBwwDVkxHMGYwHwYIKoUDBwEBAQEwEwYHKoUDAgIkAAYIKoUDBwEBAgIDQwAEQBnWXfS/PoQdUUG0SD4/W7axHPtonzdxCRDDPToqrkvF0L8eAIlcfOZzgsAboZAPeXnRAD0+Zi1D+yy1PDNSla+jggF2MIIBcjAOBgNVHQ8BAf8EBAMCBPAwEwYDVR0lBAwwCgYIKwYBBQUHAwIwHQYDVR0OBBYEFJrTfhs8HzDH32v3WfmHOmcQUtxrMB8GA1UdIwQYMBaAFBPuDprx4ItKrhkW78vExS2pGTcdMFwGA1UdHwRVMFMwUaBPoE2GS2h0dHA6Ly90ZXN0Y2EuY3J5cHRvcHJvLnJ1L0NlcnRFbnJvbGwvQ1JZUFRPLVBSTyUyMFRlc3QlMjBDZW50ZXIlMjAyKDIpLmNybDCBrAYIKwYBBQUHAQEEgZ8wgZwwZAYIKwYBBQUHMAKGWGh0dHA6Ly90ZXN0Y2EuY3J5cHRvcHJvLnJ1L0NlcnRFbnJvbGwvdGVzdC1jYS0yMDE0X0NSWVBUTy1QUk8lMjBUZXN0JTIwQ2VudGVyJTIwMigyKS5jcnQwNAYIKwYBBQUHMAGGKGh0dHA6Ly90ZXN0Y2EuY3J5cHRvcHJvLnJ1L29jc3Avb2NzcC5zcmYwCgYIKoUDBwEBAwIDQQDeBZvnukbqAp4NC5/POGIhR3HGDLW5C1vnauP8Iey8HCUeNysdcSnv+zeT97Tl6UGn6zQeib8/S0LvV3soEW8L
+                            </ds:X509Certificate>
+                        </ds:X509Data>
+                    </ds:KeyInfo>
+                </ds:Signature>
+            </ns:CallerInformationSystemSignature>
+        </ns:SendResponseRequest>
+    </soapenv:Body>
+</soapenv:Envelope>
