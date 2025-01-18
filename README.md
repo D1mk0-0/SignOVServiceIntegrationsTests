@@ -52,12 +52,12 @@ pytest
 1.1. отправляет PATCH-запрос с телом: 
 
 ~~~ json
-   {
-     "thumbprint": "string",
-     "xml": "string",
-     "needSignAttachments": true,
-     "mr": 0
-   }
+{
+ "thumbprint": "string",
+ "xml": "string",
+ "needSignAttachments": true,
+ "mr": 0
+}
 ~~~
 
 где:
@@ -93,12 +93,12 @@ pytest
 2.1. отправляет PATCH-запрос с телом: 
 
 ~~~ json
-   {
-     "thumbprint": "string",
-     "xml": "string",
-     "needSignAttachments": true,
-     "mr": 0
-   }
+{
+ "thumbprint": "string",
+ "xml": "string",
+ "needSignAttachments": true,
+ "mr": 0
+}
 ~~~
 
 где:
@@ -146,10 +146,10 @@ pytest
 3.1. отправляет PATCH-запрос с телом: 
 
 ~~~ json
-   {
-     "thumbprint": "string",
-     "data": "string"
-   }
+{
+ "thumbprint": "string",
+ "data": "string"
+}
 ~~~
 
 где:
@@ -214,12 +214,12 @@ pytest
 8.1. отправляет PATCH-запрос с телом: 
 
 ~~~ json
-   {
-     "thumbprint": "string",
-     "xml": "string",
-     "needSignAttachments": true,
-     "mr": 0
-   }
+{
+ "thumbprint": "string",
+ "xml": "string",
+ "needSignAttachments": true,
+ "mr": 0
+}
 ~~~
 
 где все значения корректные, за исключением "thumbprint"
@@ -231,10 +231,10 @@ pytest
 9.1. отправляет PATCH-запрос с телом: 
 
 ~~~ json
-   {
-     "thumbprint": "string",
-     "data": "string"
-   }
+{
+ "thumbprint": "string",
+ "data": "string"
+}
 ~~~
 
 где все значения корректные, за исключением "thumbprint"
@@ -246,12 +246,12 @@ pytest
 10.1. отправляет PATCH-запрос с телом: 
 
 ~~~ json
-   {
-     "thumbprint": "string",
-     "xml": "string",
-     "needSignAttachments": true,
-     "mr": 0
-   }
+{
+ "thumbprint": "string",
+ "xml": "string",
+ "needSignAttachments": true,
+ "mr": 0
+}
 ~~~
 
 где все значения корректные, за исключением "xml"
@@ -263,12 +263,12 @@ pytest
 11.1. отправляет PATCH-запрос с телом: 
 
 ~~~ json
-   {
-     "thumbprint": "string",
-     "xml": "string",
-     "needSignAttachments": true,
-     "mr": 0
-   }
+{
+ "thumbprint": "string",
+ "xml": "string",
+ "needSignAttachments": true,
+ "mr": 0
+}
 ~~~
 
 где все значения корректные, за исключением "needSignAttachments"
@@ -280,12 +280,12 @@ pytest
 12.1. отправляет PATCH-запрос с телом: 
 
 ~~~ json
-   {
-     "thumbprint": "string",
-     "xml": "string",
-     "needSignAttachments": true,
-     "mr": 0
-   }
+{
+ "thumbprint": "string",
+ "xml": "string",
+ "needSignAttachments": true,
+ "mr": 0
+}
 ~~~
 
 где все значения корректные, за исключением "mr"
@@ -297,10 +297,10 @@ pytest
 13.1. отправляет PATCH-запрос с телом: 
 
 ~~~ json
-   {
-     "thumbprint": "string",
-     "data": "string"
-   }
+{
+ "thumbprint": "string",
+ "data": "string"
+}
 ~~~
 
 где все значения корректные, за исключением "data"
